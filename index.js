@@ -34,12 +34,12 @@ app.get('/api/records', (req, res) => {
 // get one record / product
 app.get('/api/records/:id', (req, res) => {
     // res.send(req.params.id)
-    const records = records.find(record => record.id === parseInt(req.params.id))
+    const record = records.find(record => record.id === parseInt(req.params.id))
     if (!record) {
         // status code 404 not found
         res.status(404).send('The record with the given ID was not found.')
     }
-    res.send(records)
+    res.send(record)
 })
 
 
@@ -66,7 +66,6 @@ app.post('/api/records/', (req, res) => {
     // return object to the client
     res.send(record)
 })
-
 
 
 // listen server
