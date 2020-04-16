@@ -55,12 +55,18 @@ app.post('/api/records/', (req, res) => {
 
     const record = {
         id: records.length + 1,
-        title: req.body.title
+        title: req.body.title,
+        artist: req.body.artist,
+        year: req.body.year,
+        imgCover: req.body.imgCover,
+        price: req.body.price
     }
+
     records.push(record)
     // return object to the client
     res.send(record)
 })
+
 
 
 // listen server
