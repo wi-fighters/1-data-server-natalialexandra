@@ -1,0 +1,23 @@
+{
+  "name": "1-data-server-natalialexandra",
+  "version": "1.0.0",
+  "description": "## Task 01 -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wi-fighters/1-data-server-natalialexandra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wi-fighters/1-data-server-natalialexandra/issues"
+  },
+  "homepage": "https://github.com/wi-fighters/1-data-server-natalialexandra#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
